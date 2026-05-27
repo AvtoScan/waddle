@@ -6,7 +6,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-ready-black)](https://pages.github.com/)
 [![GitLab Pages](https://img.shields.io/badge/GitLab%20Pages-ready-orange)](https://docs.gitlab.com/ee/user/project/pages/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Status](https://keegooroomie.github.io/waddle/badge.svg)](https://keegooroomie.github.io/waddle)
+[![Status](badge.svg)](https://keegooroomie.github.io/waddle)
 
 ---
 
