@@ -47,9 +47,10 @@ jobs:
         run: |
           git config user.name  "waddle-bot"
           git config user.email "bot@waddle"
-          git add status.json badge.svg
+          git add status.json
+          [ -f badge.svg ]            && git add badge.svg            || true
           [ -f incidents/index.json ] && git add incidents/index.json || true
           git diff --staged --quiet && echo "no changes" && exit 0
-          git pull --rebase origin ${{ github.ref_name }}
           git commit -m "chore: update status [skip ci]"
+          git pull --rebase origin ${{ github.ref_name }}
           git push
