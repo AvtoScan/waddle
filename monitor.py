@@ -452,8 +452,9 @@ async def run_checks(config: dict, old_status: dict) -> list[dict]:
         }
         results.append(record)
 
-        # alert only on status change, skip during maintenance
-        status_changed = new_status != prev_status
+        # alert only on meaningful status change, skip during maintenance
+        # None → up means first run or new target — not worth alerting
+        status_changed = new_status != prev_status and not (prev_status is None and new_status == "up")
         if status_changed and not maint and notify:
             downtime_min = None
             if new_status == "up" and last_down:
