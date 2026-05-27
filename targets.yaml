@@ -1,0 +1,83 @@
+settings:
+  interval_minutes: 15
+  timeout_seconds: 10
+  slow_threshold_ms: 2000
+  history_keep: 200
+
+notifications:
+  channels:
+    - id: "tg"
+      type: telegram
+      token: "${TELEGRAM_BOT_TOKEN}"
+      chat_id: "${TELEGRAM_CHAT_ID}"
+
+    # - id: "discord"
+    #   type: discord
+    #   webhook_url: "${DISCORD_WEBHOOK_URL}"
+
+    # - id: "email"
+    #   type: email
+    #   smtp_host: "${SMTP_HOST}"
+    #   smtp_port: 587
+    #   smtp_user: "${SMTP_USER}"
+    #   smtp_pass: "${SMTP_PASS}"
+    #   to: "you@example.com"
+
+    # - id: "hook"
+    #   type: webhook
+    #   url: "${WEBHOOK_URL}"
+
+targets:
+  - name: "Google"
+    url: "https://www.google.com"
+    type: http
+    group: "external"
+    expected_status: 200
+    notify: ["tg"]
+
+  - name: "GitHub"
+    url: "https://github.com"
+    type: http
+    group: "external"
+    expected_status: 200
+    notify: ["tg"]
+
+  - name: "Cloudflare"
+    url: "https://1.1.1.1"
+    type: http
+    group: "external"
+    expected_status: 200
+    notify: ["tg"]
+
+  # ── your services below ────────────────────────────────────────────────────
+
+  # - name: "My site"
+  #   url: "https://example.com"
+  #   type: http
+  #   group: "production"
+  #   check_text: "Welcome"
+  #   notify: ["tg"]
+
+  # - name: "API health"
+  #   url: "https://api.example.com/health"
+  #   type: http
+  #   group: "production"
+  #   notify: ["tg"]
+
+  # - name: "SSL cert"
+  #   url: "https://example.com"
+  #   type: ssl
+  #   ssl_warn_days: 14
+  #   group: "production"
+  #   notify: ["tg"]
+
+  # - name: "Mail server"
+  #   url: "mail.example.com:25"
+  #   type: tcp
+  #   group: "infrastructure"
+  #   notify: ["tg"]
+
+  # - name: "Paused service"
+  #   url: "https://example.com"
+  #   enabled: false           # skip entirely — no check, no alerts, not shown on page
+  #   notify: ["tg"]

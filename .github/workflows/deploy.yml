@@ -1,0 +1,53 @@
+name: Waddle Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'style.css'
+      - 'config.json'
+  workflow_run:
+    workflows: ["Waddle Monitor"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Pages
+        run: |
+          mkdir -p _site
+          cp index.html style.css config.json _site/
+          [ -f status.json ] && cp status.json _site/ || echo '{"updated_at":null,"targets":[]}' > _site/status.json
+          [ -f badge.svg ] && cp badge.svg _site/ || true
+          [ -d incidents ] && cp -r incidents _site/ || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

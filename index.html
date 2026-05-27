@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waddle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <span class="logo-icon">🐧</span>
+      <div>
+        <div class="site-name" id="site-name">Waddle</div>
+        <div class="site-tagline" id="site-tagline">status page</div>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="overall-badge unknown" id="overall-badge">
+        <span class="dot" id="overall-dot"></span>
+        <span id="overall-text">loading</span>
+      </div>
+      <div class="updated-at" id="updated-at">—</div>
+    </div>
+  </header>
+
+  <div id="groups"></div>
+  <div id="incidents"></div>
+
+  <footer>
+    <div class="footer-brand">
+      powered by <a href="https://github.com/KeeGooRoomiE/waddle" target="_blank">waddle 🐧</a>
+    </div>
+    <div class="footer-refresh" id="footer-refresh"></div>
+  </footer>
+</div>
+
+<script>
+const CONFIG_FILE  = 'config.json';
+const STATUS_FILE  = 'status.json';
+const REFRESH_SEC  = 60;
+
+// ── helpers ──────────────────────────────────────────────────────────────────
+
+function statusLabel(s) {
+  return { up: 'operational', down: 'down', slow: 'degraded', warn: 'ssl warn', maint: 'maintenance', unknown: 'unknown' }[s] || s;
+}
+
+function statusClass(s, maintenance) {
+  if (maintenance && s !== 'up') return 'maint';
+  return s || 'unknown';
+}
+
+function fmtMs(ms) {
+  if (ms == null) return null;
+  return ms >= 1000 ? (ms / 1000).toFixed(1) + 's' : ms + 'ms';
+}
+
+function fmtDate(iso) {
+  if (!iso) return '—';
+  try {
+    const d = new Date(iso);
+    return d.toLocaleString('en-GB', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'UTC' }) + ' UTC';
+  } catch { return iso; }
+}
+
+function timeAgo(iso) {
+  if (!iso) return '';
+  const diff = Math.floor((Date.now() - new Date(iso)) / 1000);
+  if (diff < 60)  return `${diff}s ago`;
+  if (diff < 3600) return `${Math.floor(diff/60)}m ago`;
+  if (diff < 86400) return `${Math.floor(diff/3600)}h ago`;
+  return `${Math.floor(diff/86400)}d ago`;
+}
+
+// ── render ───────────────────────────────────────────────────────────────────
+
+function renderHistoryBar(history) {
+  if (!history || !history.length) return '';
+  const ticks = history.slice(-40).map(s =>
+    `<div class="history-tick ${s}" title="${s}"></div>`
+  ).join('');
+  return `<div class="history-bar">${ticks}</div>`;
+}
+
+function renderTarget(t) {
+  const sc   = statusClass(t.status, t.maintenance);
+  const ms   = fmtMs(t.response_ms);
+  const err  = t.error;
+  const ssl  = t.ssl_days_left;
+
+  // chips row
+  const chips = [];
+  if (ms) chips.push(`<span class="chip">${ms}</span>`);
+  if (t.status_code) chips.push(`<span class="chip">HTTP ${t.status_code}</span>`);
+  if (ssl != null) {
+    const cls = ssl <= 14 ? 'ssl-warn' : '';
+    chips.push(`<span class="chip ${cls}">SSL ${ssl}d</span>`);
+  }
+  if (t.type && t.type !== 'http') chips.push(`<span class="chip">${t.type}</span>`);
+
+  // error line
+  let errorLine = '';
+  if (err && t.status !== 'up') {
+    const ec = sc === 'maint' ? 'maint' : (sc === 'slow' ? 'slow' : sc === 'warn' ? 'warn' : '');
+    errorLine = `<div class="target-error ${ec}">${err}</div>`;
+  }
+  if (t.maintenance && t.status !== 'up') {
+    errorLine = `<div class="target-error maint">maintenance window</div>`;
+  }
+
+  return `
+<div class="target status-${sc}">
+  <div class="target-left">
+    <div>
+      <div class="target-name">${t.name}</div>
+      <div class="target-url">${t.url}</div>
+      ${errorLine}
+    </div>
+  </div>
+  <div class="target-right">
+    <div class="meta-chips">${chips.join('')}</div>
+    <div class="status-badge ${sc}">${statusLabel(sc === 'maint' ? 'maint' : t.status)}</div>
+  </div>
+  <div class="target-bottom">
+    ${renderHistoryBar(t.history)}
+  </div>
+</div>`;
+}
+
+function renderGroups(targets) {
+  // group targets
+  const groups = {};
+  for (const t of targets) {
+    const g = t.group || 'other';
+    if (!groups[g]) groups[g] = [];
+    groups[g].push(t);
+  }
+
+  const container = document.getElementById('groups');
+  container.innerHTML = Object.entries(groups).map(([name, items]) => `
+<div class="group-section">
+  <div class="group-label">${name}</div>
+  ${items.map(renderTarget).join('')}
+</div>`).join('');
+}
+
+function updateOverall(targets) {
+  const hasDown  = targets.some(t => t.status === 'down' && !t.maintenance);
+  const hasSlow  = targets.some(t => t.status === 'slow' && !t.maintenance);
+  const hasWarn  = targets.some(t => t.status === 'warn' && !t.maintenance);
+  const allUp    = !hasDown && !hasSlow && !hasWarn;
+
+  const badge = document.getElementById('overall-badge');
+  const dot   = document.getElementById('overall-dot');
+  const text  = document.getElementById('overall-text');
+
+  badge.className = 'overall-badge ' + (hasDown ? 'down' : hasSlow ? 'slow' : hasWarn ? 'warn' : 'up');
+  dot.className   = 'dot' + (hasDown ? ' pulse' : '');
+  text.textContent = hasDown ? 'partial outage' : hasSlow ? 'degraded performance' : hasWarn ? 'ssl expiring' : 'all systems operational';
+}
+
+// ── load & refresh ───────────────────────────────────────────────────────────
+
+let refreshTimer = null;
+let refreshCountdown = REFRESH_SEC;
+
+async function loadStatus() {
+  try {
+    const res  = await fetch(STATUS_FILE + '?t=' + Date.now());
+    const data = await res.json();
+
+    renderGroups(data.targets || []);
+    updateOverall(data.targets || []);
+
+    document.getElementById('updated-at').textContent = 'updated ' + timeAgo(data.updated_at);
+  } catch (e) {
+    console.error('waddle: failed to load status.json', e);
+  }
+}
+
+async function loadConfig() {
+  try {
+    const res  = await fetch(CONFIG_FILE + '?t=' + Date.now());
+    const cfg  = await res.json();
+    if (cfg.site_name) {
+      document.getElementById('site-name').textContent = cfg.site_name;
+      document.title = cfg.site_name;
+    }
+    if (cfg.tagline) {
+      document.getElementById('site-tagline').textContent = cfg.tagline;
+    }
+  } catch { /* config is optional */ }
+}
+
+function startRefreshCountdown() {
+  const el = document.getElementById('footer-refresh');
+  clearInterval(refreshTimer);
+  refreshCountdown = REFRESH_SEC;
+
+  refreshTimer = setInterval(() => {
+    refreshCountdown--;
+    el.textContent = `refresh in ${refreshCountdown}s`;
+    if (refreshCountdown <= 0) {
+      clearInterval(refreshTimer);
+      el.textContent = 'refreshing...';
+      loadStatus().then(() => startRefreshCountdown());
+    }
+  }, 1000);
+}
+
+// ── incidents ────────────────────────────────────────────────────────────────
+
+function mdToHtml(text) {
+  return text
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/`(.+?)`/g, '<code>$1</code>')
+    .split(/\n\n+/)
+    .map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`)
+    .join('');
+}
+
+function renderIncident(inc) {
+  const sc = inc.status === 'ongoing' ? 'down' : 'up';
+  const label = inc.status === 'ongoing' ? 'ongoing' : 'resolved';
+  const body = inc.body ? `<div class="incident-body">${mdToHtml(inc.body)}</div>` : '';
+  return `
+<div class="incident">
+  <div class="incident-head">
+    <div class="incident-title">${inc.title}</div>
+    <div class="incident-meta">
+      <span class="status-badge ${sc}">${label}</span>
+      <span class="chip">${fmtDate(inc.date)}</span>
+    </div>
+  </div>
+  ${body}
+</div>`;
+}
+
+async function loadIncidents() {
+  try {
+    const res = await fetch('incidents/index.json?t=' + Date.now());
+    if (!res.ok) return;
+    const incidents = await res.json();
+    if (!incidents.length) return;
+    const sorted = [...incidents].sort((a, b) => new Date(b.date) - new Date(a.date));
+    document.getElementById('incidents').innerHTML = `
+<div class="incidents-section">
+  <div class="group-label">incidents</div>
+  ${sorted.map(renderIncident).join('')}
+</div>`;
+  } catch { /* incidents are optional */ }
+}
+
+// ── init ─────────────────────────────────────────────────────────────────────
+
+(async () => {
+  await loadConfig();
+  await loadStatus();
+  await loadIncidents();
+  startRefreshCountdown();
+})();
+</script>
+</body>
+</html>

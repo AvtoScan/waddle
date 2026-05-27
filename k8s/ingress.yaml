@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: waddle
+  labels:
+    app: waddle
+  annotations:
+    # uncomment for cert-manager + Let's Encrypt
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "30"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: status.example.com     # ← change to your domain
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: waddle
+                port:
+                  number: 80
+  # uncomment when cert-manager annotation is set
+  # tls:
+  #   - hosts:
+  #       - status.example.com
+  #     secretName: waddle-tls

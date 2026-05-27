@@ -1,0 +1,63 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: waddle-monitor
+  labels:
+    app: waddle
+    component: monitor
+spec:
+  schedule: "*/5 * * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      activeDeadlineSeconds: 120
+      template:
+        metadata:
+          labels:
+            app: waddle
+            component: monitor
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: monitor
+              image: python:3.12-slim
+              imagePullPolicy: IfNotPresent
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  pip install aiohttp pyyaml -q &&
+                  python /app/monitor.py
+              envFrom:
+                - secretRef:
+                    name: waddle-secrets
+              volumeMounts:
+                - name: app
+                  mountPath: /app
+                  readOnly: true
+                - name: status
+                  mountPath: /app/status.json
+                  subPath: status.json
+                - name: targets
+                  mountPath: /app/targets.yaml
+                  subPath: targets.yaml
+                  readOnly: true
+              resources:
+                requests:
+                  cpu: 50m
+                  memory: 64Mi
+                limits:
+                  cpu: 200m
+                  memory: 128Mi
+          volumes:
+            - name: app
+              configMap:
+                name: waddle-app
+            - name: targets
+              configMap:
+                name: waddle-targets
+            - name: status
+              persistentVolumeClaim:
+                claimName: waddle-status

@@ -1,0 +1,92 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: waddle-targets
+  labels:
+    app: waddle
+data:
+  targets.yaml: |
+    settings:
+      interval_minutes: 5
+      timeout_seconds: 10
+      slow_threshold_ms: 2000
+      history_keep: 200
+
+    notifications:
+      channels:
+        - id: "tg"
+          type: telegram
+          token: "${TELEGRAM_BOT_TOKEN}"
+          chat_id: "${TELEGRAM_CHAT_ID}"
+
+    targets:
+      - name: "Google"
+        url: "https://www.google.com"
+        type: http
+        group: "external"
+        notify: ["tg"]
+
+      - name: "My site"
+        url: "https://example.com"
+        type: http
+        group: "production"
+        notify: ["tg"]
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: waddle-app
+  labels:
+    app: waddle
+data:
+  config.json: |
+    {
+      "site_name": "Waddle",
+      "tagline": "status page",
+      "timezone": "UTC"
+    }
+  # Note: monitor.py and index.html are too large for ConfigMap.
+  # Mount them via a separate volume from an image or use an init container.
+  # See README for alternative approaches.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: waddle-nginx
+  labels:
+    app: waddle
+data:
+  nginx.conf: |
+    server {
+        listen 80;
+        server_name _;
+        root /usr/share/nginx/html;
+        index index.html;
+
+        # disable caching for status.json so browser always gets fresh data
+        location /status.json {
+            add_header Cache-Control "no-store, no-cache, must-revalidate";
+            add_header Pragma no-cache;
+            expires 0;
+        }
+
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+
+        gzip on;
+        gzip_types text/html text/css application/javascript application/json;
+    }
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: waddle-status
+  labels:
+    app: waddle
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Mi

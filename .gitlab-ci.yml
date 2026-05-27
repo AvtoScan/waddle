@@ -1,0 +1,56 @@
+stages:
+  - monitor
+  - pages
+
+# ── Monitor job (scheduled) ───────────────────────────────────────────────────
+waddle-monitor:
+  stage: monitor
+  image: python:3.12-slim
+
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"      # ручной запуск через UI
+
+  variables:
+    GIT_STRATEGY: clone
+
+  before_script:
+    - pip install aiohttp pyyaml --quiet
+    - git config user.name  "waddle-bot"
+    - git config user.email "bot@waddle"
+
+  script:
+    - python monitor.py
+    - git add status.json
+    - |
+      if git diff --staged --quiet; then
+        echo "no changes to commit"
+      else
+        git pull --rebase origin "$CI_DEFAULT_BRANCH"
+        git commit -m "chore: update status [skip ci]"
+        git push "https://waddle-bot:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:"$CI_DEFAULT_BRANCH"
+      fi
+
+# ── Pages deploy (on push to main) ───────────────────────────────────────────
+pages:
+  stage: pages
+  image: alpine:latest
+
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+  script:
+    - mkdir -p public
+    - cp index.html style.css config.json public/
+    - '[ -f status.json ] && cp status.json public/ || echo "{\"updated_at\":null,\"targets\":[]}" > public/status.json'
+    - '[ -f badge.svg ] && cp badge.svg public/ || true'
+    - '[ -d incidents ] && cp -r incidents public/ || true'
+
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 day
+
+  environment:
+    name: production
+    url: $CI_PAGES_URL

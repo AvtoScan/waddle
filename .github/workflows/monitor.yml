@@ -1,0 +1,55 @@
+name: Waddle Monitor
+
+on:
+  # schedule:
+  #   - cron: '*/15 * * * *'   # uncomment to enable automatic monitoring
+  workflow_dispatch:
+
+concurrency:
+  group: waddle-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install aiohttp pyyaml
+
+      - name: Run monitor
+        env:
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:    ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SMTP_HOST:           ${{ secrets.SMTP_HOST }}
+          SMTP_USER:           ${{ secrets.SMTP_USER }}
+          SMTP_PASS:           ${{ secrets.SMTP_PASS }}
+          WEBHOOK_URL:         ${{ secrets.WEBHOOK_URL }}
+        run: python monitor.py
+
+      - name: Commit status
+        run: |
+          git config user.name  "waddle-bot"
+          git config user.email "bot@waddle"
+          git add status.json badge.svg
+          [ -f incidents/index.json ] && git add incidents/index.json || true
+          git diff --staged --quiet && echo "no changes" && exit 0
+          git pull --rebase origin ${{ github.ref_name }}
+          git commit -m "chore: update status [skip ci]"
+          git push
