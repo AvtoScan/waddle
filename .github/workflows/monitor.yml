@@ -1,8 +1,8 @@
 name: Waddle Monitor
 
 on:
-  # schedule:
-  #   - cron: '*/15 * * * *'   # uncomment to enable automatic monitoring
+  schedule:
+    - cron: '*/30 * * * *'   # comment to disable automatic monitoring
   workflow_dispatch:
 
 concurrency:
