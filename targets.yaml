@@ -31,14 +31,14 @@ targets:
   - name: "1C"
     url: "http://95.190.201.194:16231/UTKEM"
     type: http
-    group: "internal"
+    group: "1c"
     expected_status: 200
     notify: ["tg"]
 
   - name: "Основной сайт"
     url: "https://avtoscan42.ru"
     type: http
-    group: "external"
+    group: "main"
     expected_status: 200
     notify: ["tg"]
 
@@ -46,7 +46,7 @@ targets:
     url: "https://avtoscan42.ru"
     type: ssl
     ssl_warn_days: 14
-    group: "production"
+    group: "main"
     notify: ["tg"]
 
   - name: "Памятка по клиентам"
