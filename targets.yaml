@@ -1,5 +1,5 @@
 settings:
-  interval_minutes: 15
+  interval_minutes: 30
   timeout_seconds: 10
   slow_threshold_ms: 2000
   history_keep: 200
@@ -40,6 +40,13 @@ targets:
     type: http
     group: "external"
     expected_status: 200
+    notify: ["tg"]
+
+  - name: "SSL Сертификат"
+    url: "https://avtoscan42.ru"
+    type: ssl
+    ssl_warn_days: 14
+    group: "production"
     notify: ["tg"]
 
   - name: "Памятка по клиентам"
