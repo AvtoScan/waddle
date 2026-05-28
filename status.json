@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28T04:40:07Z",
+  "updated_at": "2026-05-28T04:41:13Z",
   "targets": [
     {
       "name": "1C",
@@ -8,45 +8,48 @@
       "group": "internal",
       "status": "up",
       "status_code": 200,
-      "response_ms": 669,
+      "response_ms": 521,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up"
       ]
     },
     {
       "name": "Основной сайт",
-      "url": "https://avtoscan.ru",
+      "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "down",
-      "status_code": null,
-      "response_ms": null,
+      "status": "up",
+      "status_code": 200,
+      "response_ms": 1672,
       "ssl_days_left": null,
-      "error": "timeout (>10s)",
-      "last_down": "2026-05-28T04:39:53Z",
+      "error": null,
+      "last_down": null,
       "maintenance": false,
       "history": [
-        "down"
+        "down",
+        "up"
       ]
     },
     {
       "name": "Памятка по клиентам",
-      "url": "https://account.avtoscan.ru",
+      "url": "https://account.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "down",
-      "status_code": null,
-      "response_ms": null,
+      "status": "up",
+      "status_code": 200,
+      "response_ms": 266,
       "ssl_days_left": null,
-      "error": "timeout (>10s)",
-      "last_down": "2026-05-28T04:40:07Z",
+      "error": null,
+      "last_down": null,
       "maintenance": false,
       "history": [
-        "down"
+        "down",
+        "up"
       ]
     }
   ]
