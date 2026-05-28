@@ -50,5 +50,5 @@ jobs:
           [ -f incidents/index.json ] && git add incidents/index.json || true
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: update status [skip ci]"
-          git pull --rebase origin ${{ github.ref_name }}
+          git pull --rebase -Xtheirs origin ${{ github.ref_name }}
           git push || (sleep 10 && git push) || (sleep 20 && git push)
