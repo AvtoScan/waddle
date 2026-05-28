@@ -1,19 +1,20 @@
 {
-  "updated_at": "2026-05-28T04:41:13Z",
+  "updated_at": "2026-05-28T04:52:15Z",
   "targets": [
     {
       "name": "1C",
       "url": "http://95.190.201.194:16231/UTKEM",
       "type": "http",
-      "group": "internal",
+      "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 521,
+      "response_ms": 641,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up"
       ]
@@ -22,16 +23,33 @@
       "name": "Основной сайт",
       "url": "https://avtoscan42.ru",
       "type": "http",
-      "group": "external",
+      "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1672,
+      "response_ms": 1905,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
         "down",
+        "up",
+        "up"
+      ]
+    },
+    {
+      "name": "SSL Сертификат",
+      "url": "https://avtoscan42.ru",
+      "type": "ssl",
+      "group": "main",
+      "status": "up",
+      "status_code": null,
+      "response_ms": null,
+      "ssl_days_left": 138,
+      "error": null,
+      "last_down": null,
+      "maintenance": false,
+      "history": [
         "up"
       ]
     },
@@ -42,13 +60,14 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 266,
+      "response_ms": 581,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
         "down",
+        "up",
         "up"
       ]
     }
