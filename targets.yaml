@@ -36,14 +36,14 @@ targets:
     notify: ["tg"]
 
   - name: "Основной сайт"
-    url: "https://avtoscan.ru"
+    url: "https://avtoscan42.ru"
     type: http
     group: "external"
     expected_status: 200
     notify: ["tg"]
 
   - name: "Памятка по клиентам"
-    url: "https://account.avtoscan.ru"
+    url: "https://account.avtoscan42.ru"
     type: http
     group: "external"
     expected_status: 200
