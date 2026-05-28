@@ -28,22 +28,22 @@ notifications:
     #   url: "${WEBHOOK_URL}"
 
 targets:
-  - name: "Google"
-    url: "https://www.google.com"
+  - name: "1C"
+    url: "http://95.190.201.194:16231/UTKEM"
+    type: http
+    group: "internal"
+    expected_status: 200
+    notify: ["tg"]
+
+  - name: "Основной сайт"
+    url: "https://avtoscan.ru"
     type: http
     group: "external"
     expected_status: 200
     notify: ["tg"]
 
-  - name: "GitHub"
-    url: "https://github.com"
-    type: http
-    group: "external"
-    expected_status: 200
-    notify: ["tg"]
-
-  - name: "Cloudflare"
-    url: "https://1.1.1.1"
+  - name: "Памятка по клиентам"
+    url: "https://account.avtoscan.ru"
     type: http
     group: "external"
     expected_status: 200
