@@ -2,7 +2,7 @@ name: Waddle Monitor
 
 on:
   schedule:
-    - cron: '*/21 * * * *' 
+    - cron: '*/26 * * * *' 
   workflow_dispatch:
 
 concurrency:
