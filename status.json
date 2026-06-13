@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T15:56:57Z",
+  "updated_at": "2026-06-13T20:49:50Z",
   "targets": [
     {
       "name": "1C",
@@ -8,12 +8,13 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 639,
+      "response_ms": 515,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -77,7 +78,7 @@
       "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1720,
+      "response_ms": 1420,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -127,6 +128,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -205,6 +207,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -215,13 +218,14 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 541,
+      "response_ms": 383,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
         "down",
+        "up",
         "up",
         "up",
         "up",
