@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T23:37:33Z",
+  "updated_at": "2026-07-13T01:15:36Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 529,
+      "response_ms": 655,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,16 +221,15 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1469,
+      "response_ms": 2054,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-13T01:15:33Z",
       "maintenance": false,
       "history": [
         "up",
-        "up",
         "slow",
         "up",
         "slow",
@@ -428,7 +427,8 @@
         "slow",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -653,7 +653,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 375,
+      "response_ms": 635,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
