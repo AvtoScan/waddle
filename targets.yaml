@@ -56,6 +56,20 @@ targets:
     expected_status: 200
     notify: ["tg"]
 
+  - name: "База знаний - Git"
+    url: "https://base.avtoscan42.ru"
+    type: http
+    group: "external"
+    expected_status: 200
+    notify: ["tg"]
+
+  - name: "База знаний - VPS"
+    url: "http://95.190.201.194:26502/"
+    type: http
+    group: "external"
+    expected_status: 200
+    notify: ["tg"]
+
   # ── your services below ────────────────────────────────────────────────────
 
   # - name: "My site"
