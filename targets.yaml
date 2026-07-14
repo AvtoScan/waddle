@@ -67,7 +67,7 @@ targets:
     url: "http://95.190.201.194:26502/"
     type: http
     group: "external"
-    expected_status: 200
+    expected_status: 400
     notify: ["tg"]
 
   # ── your services below ────────────────────────────────────────────────────
