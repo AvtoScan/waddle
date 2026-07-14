@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T06:30:28Z",
+  "updated_at": "2026-07-14T08:55:22Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 591,
+      "response_ms": 576,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -223,14 +223,13 @@
       "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1665,
+      "response_ms": 1495,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
         "up",
-        "up",
         "slow",
         "up",
         "slow",
@@ -426,6 +425,7 @@
         "up",
         "slow",
         "slow",
+        "up",
         "up",
         "up",
         "up"
@@ -439,7 +439,7 @@
       "status": "up",
       "status_code": null,
       "response_ms": null,
-      "ssl_days_left": 91,
+      "ssl_days_left": 90,
       "error": null,
       "last_down": null,
       "maintenance": false,
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 686,
+      "response_ms": 391,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 608,
+      "response_ms": 263,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up"
@@ -886,13 +887,14 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 389,
+      "response_ms": 388,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
         "down",
+        "up",
         "up",
         "up"
       ]
