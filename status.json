@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T04:19:15Z",
+  "updated_at": "2026-07-14T05:29:02Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 657,
+      "response_ms": 522,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,19 +221,18 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2126,
+      "response_ms": 1700,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-07-14T01:05:22Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "slow",
@@ -428,7 +427,8 @@
         "up",
         "up",
         "slow",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -653,7 +653,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 774,
+      "response_ms": 399,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -856,9 +856,41 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
+        "up",
         "up"
+      ]
+    },
+    {
+      "name": "База знаний - Git",
+      "url": "https://base.avtoscan42.ru",
+      "type": "http",
+      "group": "external",
+      "status": "up",
+      "status_code": 200,
+      "response_ms": 384,
+      "ssl_days_left": null,
+      "error": null,
+      "last_down": null,
+      "maintenance": false,
+      "history": [
+        "up"
+      ]
+    },
+    {
+      "name": "База знаний - VPS",
+      "url": "http://95.190.201.194:26502/",
+      "type": "http",
+      "group": "external",
+      "status": "down",
+      "status_code": 400,
+      "response_ms": 348,
+      "ssl_days_left": null,
+      "error": "HTTP 400 (expected 200)",
+      "last_down": "2026-07-14T05:29:01Z",
+      "maintenance": false,
+      "history": [
+        "down"
       ]
     }
   ]
