@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T01:02:33Z",
+  "updated_at": "2026-07-15T04:19:33Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 634,
+      "response_ms": 561,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,18 +221,17 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2003,
+      "response_ms": 1682,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-07-15T01:02:30Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "slow",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 785,
+      "response_ms": 622,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 313,
+      "response_ms": 677,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -899,13 +900,14 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 431,
+      "response_ms": 375,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
         "down",
+        "up",
         "up",
         "up",
         "up",
