@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T12:56:05Z",
+  "updated_at": "2026-07-16T14:56:33Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 640,
+      "response_ms": 647,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,12 +221,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1997,
+      "response_ms": 2146,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-16T14:56:29Z",
       "maintenance": false,
       "history": [
         "up",
@@ -245,7 +245,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 354,
+      "response_ms": 720,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 474,
+      "response_ms": 795,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -919,7 +920,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 439,
+      "response_ms": 443,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -957,6 +958,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up",
         "up",
         "up",
