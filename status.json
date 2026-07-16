@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T07:10:26Z",
+  "updated_at": "2026-07-16T09:32:44Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 599,
+      "response_ms": 570,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -223,13 +223,12 @@
       "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1935,
+      "response_ms": 1776,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "slow",
         "up",
         "up",
         "up",
@@ -428,6 +427,7 @@
         "slow",
         "up",
         "slow",
+        "up",
         "up"
       ]
     },
@@ -439,7 +439,7 @@
       "status": "up",
       "status_code": null,
       "response_ms": null,
-      "ssl_days_left": 89,
+      "ssl_days_left": 88,
       "error": null,
       "last_down": null,
       "maintenance": false,
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 530,
+      "response_ms": 515,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 513,
+      "response_ms": 502,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -916,7 +917,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 379,
+      "response_ms": 360,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -954,6 +955,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up"
       ]
     }
