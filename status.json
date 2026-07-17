@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T16:53:44Z",
+  "updated_at": "2026-07-17T17:58:43Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 641,
+      "response_ms": 624,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,17 +221,16 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1860,
+      "response_ms": 2610,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-17T17:58:39Z",
       "maintenance": false,
       "history": [
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "slow",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -802,8 +802,8 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 714,
+      "response_ms": 754,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -935,12 +936,12 @@
       "url": "http://95.190.201.194:26502/",
       "type": "http",
       "group": "external",
-      "status": "down",
-      "status_code": null,
-      "response_ms": null,
+      "status": "up",
+      "status_code": 400,
+      "response_ms": 432,
       "ssl_days_left": null,
-      "error": "timeout (>10s)",
-      "last_down": "2026-07-17T04:30:51Z",
+      "error": null,
+      "last_down": null,
       "maintenance": false,
       "history": [
         "down",
@@ -996,7 +997,8 @@
         "down",
         "down",
         "down",
-        "down"
+        "down",
+        "up"
       ]
     }
   ]
