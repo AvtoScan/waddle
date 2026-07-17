@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T20:17:19Z",
+  "updated_at": "2026-07-17T21:12:07Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 631,
+      "response_ms": 547,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,15 +221,14 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2059,
+      "response_ms": 1617,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-07-17T20:17:16Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
-        "slow",
         "up",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "slow",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 673,
+      "response_ms": 634,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 442,
+      "response_ms": 376,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -940,7 +941,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 429,
+      "response_ms": 356,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1000,6 +1001,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up",
         "up",
         "up"
