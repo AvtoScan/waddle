@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T21:12:07Z",
+  "updated_at": "2026-07-17T22:09:56Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 547,
+      "response_ms": 654,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,19 +221,18 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1617,
+      "response_ms": 2056,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-17T22:09:52Z",
       "maintenance": false,
       "history": [
         "up",
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "slow",
         "up",
         "slow",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 634,
+      "response_ms": 1155,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 376,
+      "response_ms": 1141,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -941,7 +942,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 356,
+      "response_ms": 431,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1001,6 +1002,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up",
         "up",
         "up",
