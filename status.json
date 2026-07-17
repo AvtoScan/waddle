@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T01:14:47Z",
+  "updated_at": "2026-07-17T04:30:52Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 681,
+      "response_ms": 560,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,12 +221,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2168,
+      "response_ms": 1441,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-07-16T23:41:56Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -235,7 +235,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "up",
         "slow",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 760,
+      "response_ms": 405,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,12 +868,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 884,
+      "response_ms": 687,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
@@ -927,12 +928,12 @@
       "url": "http://95.190.201.194:26502/",
       "type": "http",
       "group": "external",
-      "status": "up",
-      "status_code": 400,
-      "response_ms": 441,
+      "status": "down",
+      "status_code": null,
+      "response_ms": null,
       "ssl_days_left": null,
-      "error": null,
-      "last_down": null,
+      "error": "timeout (>10s)",
+      "last_down": "2026-07-17T04:30:51Z",
       "maintenance": false,
       "history": [
         "down",
@@ -980,7 +981,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "down"
       ]
     }
   ]
