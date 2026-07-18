@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T15:27:05Z",
+  "updated_at": "2026-07-18T16:26:46Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 564,
+      "response_ms": 559,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -223,13 +223,12 @@
       "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1489,
+      "response_ms": 1759,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "slow",
         "up",
         "up",
         "up",
@@ -428,6 +427,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up"
       ]
     },
@@ -639,10 +639,10 @@
         "up",
         "up",
         "up",
+        "down",
+        "down",
+        "down",
         "up",
-        "down",
-        "down",
-        "down",
         "up"
       ]
     },
@@ -653,7 +653,7 @@
       "group": "external",
       "status": "slow",
       "status_code": 200,
-      "response_ms": 8289,
+      "response_ms": 3513,
       "ssl_days_left": null,
       "error": null,
       "last_down": "2026-07-18T15:26:55Z",
@@ -786,7 +786,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "slow",
         "down",
         "up",
+        "slow",
         "slow"
       ]
     },
@@ -866,11 +866,11 @@
       "url": "https://base.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "slow",
-      "status_code": 200,
-      "response_ms": 8598,
+      "status": "down",
+      "status_code": null,
+      "response_ms": null,
       "ssl_days_left": null,
-      "error": null,
+      "error": "timeout (>10s)",
       "last_down": "2026-07-18T15:27:04Z",
       "maintenance": false,
       "history": [
@@ -943,7 +943,8 @@
         "up",
         "slow",
         "up",
-        "slow"
+        "slow",
+        "down"
       ]
     },
     {
@@ -953,7 +954,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 360,
+      "response_ms": 381,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1013,6 +1014,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up",
         "up",
         "up",
