@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T18:39:13Z",
+  "updated_at": "2026-07-18T19:54:29Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 635,
+      "response_ms": 530,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,18 +221,17 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2125,
+      "response_ms": 1599,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-07-18T17:28:10Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "up",
         "slow",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -636,10 +636,10 @@
         "up",
         "up",
         "up",
+        "down",
+        "down",
+        "down",
         "up",
-        "down",
-        "down",
-        "down",
         "up",
         "up",
         "up",
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 742,
+      "response_ms": 347,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -857,6 +856,7 @@
         "up",
         "slow",
         "slow",
+        "up",
         "up",
         "up"
       ]
@@ -868,7 +868,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 626,
+      "response_ms": 443,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -945,6 +945,7 @@
         "up",
         "slow",
         "down",
+        "up",
         "up",
         "up"
       ]
@@ -956,7 +957,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 433,
+      "response_ms": 348,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1016,6 +1017,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up",
         "up",
         "up",
