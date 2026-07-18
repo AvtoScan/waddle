@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T11:39:13Z",
+  "updated_at": "2026-07-18T12:40:23Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 640,
+      "response_ms": 581,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -229,7 +229,6 @@
       "last_down": "2026-07-18T10:43:48Z",
       "maintenance": false,
       "history": [
-        "up",
         "slow",
         "up",
         "slow",
@@ -428,6 +427,7 @@
         "up",
         "up",
         "slow",
+        "down",
         "down"
       ]
     },
@@ -642,7 +642,7 @@
         "up",
         "up",
         "up",
-        "up",
+        "down",
         "down"
       ]
     },
@@ -651,15 +651,14 @@
       "url": "https://account.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "slow",
-      "status_code": 200,
-      "response_ms": 2923,
+      "status": "down",
+      "status_code": null,
+      "response_ms": null,
       "ssl_days_left": null,
-      "error": null,
+      "error": "timeout (>10s)",
       "last_down": "2026-07-18T11:39:12Z",
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,7 +857,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "down"
       ]
     },
     {
@@ -866,12 +866,12 @@
       "url": "https://base.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 795,
+      "response_ms": 5719,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-18T12:40:22Z",
       "maintenance": false,
       "history": [
         "up",
@@ -940,7 +940,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -950,7 +951,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 428,
+      "response_ms": 412,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1010,6 +1011,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up",
         "up",
         "up",
