@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T16:26:46Z",
+  "updated_at": "2026-07-18T17:28:15Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 559,
+      "response_ms": 639,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,12 +221,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1759,
+      "response_ms": 2199,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-18T17:28:10Z",
       "maintenance": false,
       "history": [
         "up",
@@ -234,7 +234,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "down",
         "down",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -638,10 +638,10 @@
         "up",
         "up",
         "up",
+        "down",
+        "down",
+        "down",
         "up",
-        "down",
-        "down",
-        "down",
         "up",
         "up"
       ]
@@ -651,15 +651,14 @@
       "url": "https://account.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 3513,
+      "response_ms": 754,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-07-18T15:26:55Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,7 +857,8 @@
         "down",
         "up",
         "slow",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -866,12 +866,12 @@
       "url": "https://base.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "down",
-      "status_code": null,
-      "response_ms": null,
+      "status": "up",
+      "status_code": 200,
+      "response_ms": 943,
       "ssl_days_left": null,
-      "error": "timeout (>10s)",
-      "last_down": "2026-07-18T15:27:04Z",
+      "error": null,
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -944,7 +944,8 @@
         "slow",
         "up",
         "slow",
-        "down"
+        "down",
+        "up"
       ]
     },
     {
@@ -954,7 +955,7 @@
       "group": "external",
       "status": "up",
       "status_code": 400,
-      "response_ms": 381,
+      "response_ms": 432,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1014,6 +1015,7 @@
         "down",
         "down",
         "down",
+        "up",
         "up",
         "up",
         "up",
