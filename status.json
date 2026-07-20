@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T12:56:56Z",
+  "updated_at": "2026-07-20T15:10:01Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 524,
+      "response_ms": 622,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,19 +221,18 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1618,
+      "response_ms": 2063,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-20T15:09:47Z",
       "maintenance": false,
       "history": [
         "up",
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -609,10 +609,10 @@
         "up",
         "up",
         "up",
+        "down",
+        "down",
+        "down",
         "up",
-        "down",
-        "down",
-        "down",
         "up",
         "up",
         "up",
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 594,
+      "response_ms": 833,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -830,6 +829,7 @@
         "up",
         "slow",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -868,7 +868,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 461,
+      "response_ms": 791,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -945,6 +945,7 @@
         "up",
         "slow",
         "down",
+        "up",
         "up",
         "up",
         "up",
@@ -981,12 +982,12 @@
       "url": "http://95.190.201.194:26502/",
       "type": "http",
       "group": "external",
-      "status": "up",
-      "status_code": 400,
-      "response_ms": 356,
+      "status": "down",
+      "status_code": null,
+      "response_ms": null,
       "ssl_days_left": null,
-      "error": null,
-      "last_down": null,
+      "error": "timeout (>10s)",
+      "last_down": "2026-07-20T15:10:00Z",
       "maintenance": false,
       "history": [
         "down",
@@ -1088,7 +1089,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "down"
       ]
     }
   ]
