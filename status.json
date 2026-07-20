@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T20:13:04Z",
+  "updated_at": "2026-07-20T21:36:46Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 606,
+      "response_ms": 639,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,15 +221,14 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1818,
+      "response_ms": 2109,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-07-20T21:36:33Z",
       "maintenance": false,
       "history": [
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "slow",
         "slow",
         "slow",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -605,10 +605,10 @@
         "up",
         "up",
         "up",
+        "down",
+        "down",
+        "down",
         "up",
-        "down",
-        "down",
-        "down",
         "up",
         "up",
         "up",
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 645,
+      "response_ms": 775,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -826,6 +825,7 @@
         "up",
         "slow",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -868,7 +868,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 687,
+      "response_ms": 612,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -976,6 +976,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up"
       ]
@@ -1093,6 +1094,7 @@
         "up",
         "up",
         "up",
+        "down",
         "down",
         "down",
         "down",
