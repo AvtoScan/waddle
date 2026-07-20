@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T18:45:22Z",
+  "updated_at": "2026-07-20T20:13:04Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 655,
+      "response_ms": 606,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,16 +221,15 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2121,
+      "response_ms": 1818,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-07-20T15:09:47Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "slow",
         "slow",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -606,10 +606,10 @@
         "up",
         "up",
         "up",
+        "down",
+        "down",
+        "down",
         "up",
-        "down",
-        "down",
-        "down",
         "up",
         "up",
         "up",
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 826,
+      "response_ms": 645,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -827,6 +826,7 @@
         "up",
         "slow",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -868,7 +868,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 749,
+      "response_ms": 687,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -976,6 +976,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up"
       ]
     },
@@ -1092,6 +1093,7 @@
         "up",
         "up",
         "up",
+        "down",
         "down",
         "down",
         "down"
