@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T19:44:08Z",
+  "updated_at": "2026-08-10T20:25:22Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 651,
+      "response_ms": 557,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,15 +221,14 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2085,
+      "response_ms": 1600,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-08-10T19:43:52Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "slow",
         "slow",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 737,
+      "response_ms": 432,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,6 +857,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -868,7 +868,7 @@
       "group": "external",
       "status": "slow",
       "status_code": 200,
-      "response_ms": 3219,
+      "response_ms": 2861,
       "ssl_days_left": null,
       "error": null,
       "last_down": "2026-07-31T12:22:55Z",
@@ -892,7 +892,6 @@
         "up",
         "up",
         "up",
-        "up",
         "down",
         "down",
         "down",
@@ -936,6 +935,7 @@
         "down",
         "down",
         "down",
+        "slow",
         "slow",
         "slow",
         "slow",
@@ -1211,7 +1211,7 @@
         "up",
         "up",
         "up",
-        "up",
+        "down",
         "down",
         "down",
         "down",
