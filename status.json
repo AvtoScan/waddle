@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T08:05:50Z",
+  "updated_at": "2026-08-12T09:35:11Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 534,
+      "response_ms": 623,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,12 +221,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1480,
+      "response_ms": 2031,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-08-12T09:34:47Z",
       "maintenance": false,
       "history": [
         "up",
@@ -250,7 +250,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "slow",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -439,7 +439,7 @@
       "status": "up",
       "status_code": null,
       "response_ms": null,
-      "ssl_days_left": 62,
+      "ssl_days_left": 61,
       "error": null,
       "last_down": null,
       "maintenance": false,
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 331,
+      "response_ms": 774,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "down",
         "down",
         "down",
         "down",
@@ -801,6 +800,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -866,11 +866,11 @@
       "url": "https://base.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "slow",
-      "status_code": 200,
-      "response_ms": 2305,
+      "status": "down",
+      "status_code": null,
+      "response_ms": null,
       "ssl_days_left": null,
-      "error": null,
+      "error": "timeout (>10s)",
       "last_down": "2026-07-31T12:22:55Z",
       "maintenance": false,
       "history": [
@@ -904,7 +904,6 @@
         "down",
         "down",
         "down",
-        "down",
         "slow",
         "slow",
         "slow",
@@ -1073,7 +1072,8 @@
         "slow",
         "slow",
         "slow",
-        "slow"
+        "slow",
+        "down"
       ]
     },
     {
@@ -1180,7 +1180,7 @@
         "up",
         "up",
         "up",
-        "up",
+        "down",
         "down",
         "down",
         "down",
