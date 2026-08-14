@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T11:32:11Z",
+  "updated_at": "2026-08-14T12:30:23Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 656,
+      "response_ms": 543,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,12 +221,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2310,
+      "response_ms": 1577,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-08-14T11:31:47Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -238,7 +238,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "slow",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -653,7 +653,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 494,
+      "response_ms": 552,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -758,7 +758,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -827,6 +826,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -1032,7 +1032,7 @@
         "slow",
         "slow",
         "slow",
-        "slow",
+        "down",
         "down",
         "down",
         "down",
@@ -1139,7 +1139,7 @@
         "up",
         "up",
         "up",
-        "up",
+        "down",
         "down",
         "down",
         "down",
