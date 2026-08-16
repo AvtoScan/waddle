@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-16T15:02:00Z",
+  "updated_at": "2026-08-16T15:42:01Z",
   "targets": [
     {
       "name": "1C",
       "url": "http://95.190.201.194:16231/UTKEM",
       "type": "http",
       "group": "1c",
-      "status": "up",
-      "status_code": 200,
-      "response_ms": 633,
+      "status": "down",
+      "status_code": null,
+      "response_ms": null,
       "ssl_days_left": null,
-      "error": null,
-      "last_down": null,
+      "error": "timeout (>10s)",
+      "last_down": "2026-08-16T15:41:34Z",
       "maintenance": false,
       "history": [
         "up",
@@ -213,7 +213,7 @@
         "up",
         "up",
         "up",
-        "up"
+        "down"
       ]
     },
     {
@@ -221,17 +221,16 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1732,
+      "response_ms": 2010,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-08-16T15:41:37Z",
       "maintenance": false,
       "history": [
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,7 +427,8 @@
         "up",
         "slow",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -653,7 +653,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 678,
+      "response_ms": 722,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -672,7 +672,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -741,6 +740,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -946,7 +946,7 @@
         "slow",
         "slow",
         "slow",
-        "slow",
+        "down",
         "down",
         "down",
         "down",
