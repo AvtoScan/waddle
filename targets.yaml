@@ -35,6 +35,13 @@ targets:
     expected_status: 200
     notify: ["tg"]
 
+  - name: "Внутренний сервер"
+    url: "http://95.190.201.195"
+    type: http
+    group: "1c"
+    expected_status: 200
+    notify: ["tg"]
+
   - name: "Основной сайт"
     url: "https://avtoscan42.ru"
     type: http
@@ -56,18 +63,11 @@ targets:
     expected_status: 200
     notify: ["tg"]
 
-  - name: "База знаний - Git"
-    url: "https://base.avtoscan42.ru"
+  - name: "База знаний"
+    url: "https://base.avtoscan42.ru:26502"
     type: http
     group: "external"
     expected_status: 200
-    notify: ["tg"]
-
-  - name: "База знаний - VPS"
-    url: "http://95.190.201.194:26502/"
-    type: http
-    group: "external"
-    expected_status: 400
     notify: ["tg"]
 
   # ── your services below ────────────────────────────────────────────────────
