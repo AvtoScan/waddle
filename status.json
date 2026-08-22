@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T17:56:23Z",
+  "updated_at": "2026-08-22T18:40:30Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 511,
+      "response_ms": 517,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -287,6 +287,7 @@
         "down",
         "down",
         "down",
+        "down",
         "down"
       ]
     },
@@ -295,15 +296,14 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1514,
+      "response_ms": 3458,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-08-22T18:40:24Z",
       "maintenance": false,
       "history": [
-        "slow",
         "up",
         "up",
         "up",
@@ -502,7 +502,8 @@
         "slow",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -727,13 +728,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 578,
+      "response_ms": 442,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -932,6 +932,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -940,12 +941,12 @@
       "url": "https://base.avtoscan42.ru:26502",
       "type": "http",
       "group": "external",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1219,
+      "response_ms": 3074,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-08-22T18:40:29Z",
       "maintenance": false,
       "history": [
         "up",
@@ -1006,7 +1007,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     }
   ]
