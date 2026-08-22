@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T13:35:47Z",
+  "updated_at": "2026-08-22T13:57:40Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 525,
+      "response_ms": 536,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -17,7 +17,7 @@
         "down",
         "down",
         "down",
-        "down",
+        "up",
         "up",
         "up",
         "up",
@@ -277,6 +277,7 @@
         "down",
         "down",
         "down",
+        "down",
         "down"
       ]
     },
@@ -287,13 +288,12 @@
       "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1397,
+      "response_ms": 1475,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "slow",
         "up",
         "up",
@@ -490,6 +490,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up"
@@ -715,15 +716,14 @@
       "url": "https://account.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 327,
+      "response_ms": 2419,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-08-22T13:57:39Z",
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -922,7 +922,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -932,12 +933,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1168,
+      "response_ms": 1076,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
