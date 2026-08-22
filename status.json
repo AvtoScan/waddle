@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T05:59:53Z",
+  "updated_at": "2026-08-22T06:54:58Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 631,
+      "response_ms": 599,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -30,7 +30,7 @@
         "down",
         "down",
         "down",
-        "down",
+        "up",
         "up",
         "up",
         "up",
@@ -264,6 +264,7 @@
         "down",
         "down",
         "down",
+        "down",
         "down"
       ]
     },
@@ -272,12 +273,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2314,
+      "response_ms": 1822,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-08-22T05:59:49Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -288,7 +289,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "slow",
         "up",
@@ -479,7 +479,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -704,13 +705,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 954,
+      "response_ms": 492,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -909,6 +909,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -919,12 +920,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1430,
+      "response_ms": 1216,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
