@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T09:13:07Z",
+  "updated_at": "2026-08-22T09:47:21Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 603,
+      "response_ms": 641,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -25,7 +25,7 @@
         "down",
         "down",
         "down",
-        "down",
+        "up",
         "up",
         "up",
         "up",
@@ -269,6 +269,7 @@
         "down",
         "down",
         "down",
+        "down",
         "down"
       ]
     },
@@ -277,18 +278,17 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1912,
+      "response_ms": 2160,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-08-22T09:47:17Z",
       "maintenance": false,
       "history": [
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "slow",
         "up",
@@ -484,7 +484,8 @@
         "slow",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     },
     {
@@ -709,13 +710,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 716,
+      "response_ms": 930,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -914,6 +914,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -924,12 +925,13 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1486,
+      "response_ms": 1390,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
+        "up",
         "up",
         "up",
         "up",
