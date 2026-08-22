@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T18:40:30Z",
+  "updated_at": "2026-08-22T19:05:35Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 517,
+      "response_ms": 505,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -288,6 +288,7 @@
         "down",
         "down",
         "down",
+        "down",
         "down"
       ]
     },
@@ -296,12 +297,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 3458,
+      "response_ms": 1530,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-08-22T18:40:24Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -309,7 +310,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "slow",
@@ -503,7 +503,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -728,13 +729,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 442,
+      "response_ms": 536,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -933,6 +933,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -941,12 +942,12 @@
       "url": "https://base.avtoscan42.ru:26502",
       "type": "http",
       "group": "external",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 3074,
+      "response_ms": 1284,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-08-22T18:40:29Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -1008,7 +1009,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     }
   ]
