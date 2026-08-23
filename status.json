@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T11:56:36Z",
+  "updated_at": "2026-08-23T12:55:09Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 729,
+      "response_ms": 738,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -317,6 +317,7 @@
         "down",
         "down",
         "down",
+        "down",
         "down"
       ]
     },
@@ -327,7 +328,7 @@
       "group": "main",
       "status": "slow",
       "status_code": 200,
-      "response_ms": 2162,
+      "response_ms": 2105,
       "ssl_days_left": null,
       "error": null,
       "last_down": "2026-08-23T11:56:32Z",
@@ -340,7 +341,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -532,6 +532,7 @@
         "up",
         "up",
         "up",
+        "slow",
         "slow"
       ]
     },
@@ -757,13 +758,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 600,
+      "response_ms": 818,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -962,6 +962,7 @@
         "up",
         "up",
         "up",
+        "up",
         "up"
       ]
     },
@@ -972,7 +973,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1478,
+      "response_ms": 1785,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1038,6 +1039,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
