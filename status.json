@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T07:57:15Z",
+  "updated_at": "2026-08-25T08:52:49Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 635,
+      "response_ms": 531,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -380,6 +380,7 @@
         "down",
         "down",
         "down",
+        "down",
         "down"
       ]
     },
@@ -388,12 +389,12 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2413,
+      "response_ms": 1465,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-08-25T07:57:11Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -402,7 +403,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "slow",
@@ -595,7 +595,8 @@
         "slow",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -606,7 +607,7 @@
       "status": "up",
       "status_code": null,
       "response_ms": null,
-      "ssl_days_left": 49,
+      "ssl_days_left": 48,
       "error": null,
       "last_down": null,
       "maintenance": false,
@@ -820,7 +821,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 712,
+      "response_ms": 456,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -885,7 +886,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -984,6 +984,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -1035,7 +1036,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1500,
+      "response_ms": 1167,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -1171,6 +1172,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
