@@ -35,13 +35,6 @@ targets:
     expected_status: 200
     notify: ["tg"]
 
-  - name: "Внутренний сервер"
-    url: "http://95.190.201.195"
-    type: http
-    group: "1c"
-    expected_status: 200
-    notify: ["tg"]
-
   - name: "Основной сайт"
     url: "https://avtoscan42.ru"
     type: http
