@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T22:12:09Z",
+  "updated_at": "2026-09-16T00:29:28Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 532,
+      "response_ms": 526,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -221,18 +221,17 @@
       "url": "https://avtoscan42.ru",
       "type": "http",
       "group": "main",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 3350,
+      "response_ms": 1654,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-09-15T22:12:01Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "slow",
@@ -428,7 +427,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -651,15 +651,14 @@
       "url": "https://account.avtoscan42.ru",
       "type": "http",
       "group": "external",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 2490,
+      "response_ms": 443,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-09-15T22:12:05Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -858,7 +857,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     },
     {
@@ -866,12 +866,12 @@
       "url": "https://base.avtoscan42.ru:26502",
       "type": "http",
       "group": "external",
-      "status": "slow",
+      "status": "up",
       "status_code": 200,
-      "response_ms": 3580,
+      "response_ms": 1201,
       "ssl_days_left": null,
       "error": null,
-      "last_down": "2026-09-15T22:12:09Z",
+      "last_down": null,
       "maintenance": false,
       "history": [
         "up",
@@ -882,7 +882,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -1073,7 +1072,8 @@
         "up",
         "up",
         "up",
-        "slow"
+        "slow",
+        "up"
       ]
     }
   ]
