@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T06:49:01Z",
+  "updated_at": "2026-09-28T14:39:13Z",
   "targets": [
     {
       "name": "1C",
@@ -8,7 +8,7 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 516,
+      "response_ms": 639,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -223,7 +223,7 @@
       "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1447,
+      "response_ms": 1915,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -231,7 +231,6 @@
       "history": [
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "slow",
@@ -426,6 +425,7 @@
         "up",
         "slow",
         "slow",
+        "up",
         "up",
         "up",
         "up"
@@ -436,11 +436,11 @@
       "url": "https://avtoscan42.ru",
       "type": "ssl",
       "group": "main",
-      "status": "up",
+      "status": "warn",
       "status_code": null,
       "response_ms": null,
-      "ssl_days_left": 15,
-      "error": null,
+      "ssl_days_left": 14,
+      "error": "expires in 14 days",
       "last_down": null,
       "maintenance": false,
       "history": [
@@ -643,7 +643,7 @@
         "up",
         "up",
         "up",
-        "up"
+        "warn"
       ]
     },
     {
@@ -653,7 +653,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 514,
+      "response_ms": 760,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -779,8 +779,8 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -868,7 +868,7 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 985,
+      "response_ms": 1111,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -892,7 +892,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -996,6 +995,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
