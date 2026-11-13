@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T23:38:30Z",
+  "updated_at": "2026-11-13T03:36:20Z",
   "targets": [
     {
       "name": "1C",
@@ -8,13 +8,12 @@
       "group": "1c",
       "status": "up",
       "status_code": 200,
-      "response_ms": 584,
+      "response_ms": 611,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -76,6 +75,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up",
         "up",
         "up",
@@ -223,7 +223,7 @@
       "group": "main",
       "status": "up",
       "status_code": 200,
-      "response_ms": 1735,
+      "response_ms": 1931,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
@@ -240,7 +240,6 @@
         "up",
         "up",
         "up",
-        "up",
         "slow",
         "up",
         "up",
@@ -428,6 +427,7 @@
         "up",
         "up",
         "slow",
+        "up",
         "up"
       ]
     },
@@ -462,7 +462,6 @@
         "warn",
         "warn",
         "warn",
-        "warn",
         "up",
         "up",
         "up",
@@ -519,6 +518,7 @@
         "up",
         "up",
         "down",
+        "up",
         "up",
         "up",
         "up",
@@ -653,13 +653,12 @@
       "group": "external",
       "status": "up",
       "status_code": 200,
-      "response_ms": 576,
+      "response_ms": 679,
       "ssl_days_left": null,
       "error": null,
       "last_down": null,
       "maintenance": false,
       "history": [
-        "up",
         "up",
         "up",
         "up",
@@ -828,6 +827,7 @@
         "up",
         "up",
         "down",
+        "up",
         "up",
         "up",
         "up",
@@ -866,12 +866,12 @@
       "url": "https://base.avtoscan42.ru:26502",
       "type": "http",
       "group": "external",
-      "status": "up",
+      "status": "slow",
       "status_code": 200,
-      "response_ms": 1311,
+      "response_ms": 2210,
       "ssl_days_left": null,
       "error": null,
-      "last_down": null,
+      "last_down": "2026-11-13T03:36:20Z",
       "maintenance": false,
       "history": [
         "up",
@@ -904,7 +904,6 @@
         "up",
         "up",
         "up",
-        "up",
         "down",
         "down",
         "down",
@@ -1073,7 +1072,8 @@
         "up",
         "up",
         "up",
-        "up"
+        "up",
+        "slow"
       ]
     }
   ]
